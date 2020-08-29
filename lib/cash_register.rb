@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class CashRegister
   attr_accessor :total
   attr_reader :discount
@@ -41,3 +42,32 @@ class CashRegister
 
   end
 end
+=======
+class CashRegister
+  attr_accessor :total, :discount 
+def initialize(total=0, discount =20)
+  @total = total 
+  @discount = discount 
+   end
+  
+  def self.total
+    @total
+   end 
+  
+  def add_item(title, price, quantity = 1)
+    @total = @total + price*quantity
+    @total_t = title
+    end
+  
+  
+  def apply_discount(items,)
+    
+    puts "After the discount, the total comes to $"
+    
+    
+     puts "There is no discount to apply."
+    
+  end 
+  
+end 
+>>>>>>> 8e10a99827f130e42fd98d6f7fa8b2baf2b7ea23
